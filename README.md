@@ -27,8 +27,8 @@ This project is a web application built with Flask, designed to manage and inter
 ## Installation
 
 Clone the repository to your local machine:
-git clone https://github.com/6abriel1chiro/flask-student-registration-app.git
-cd flask-student-registration-app
+git clone https://github.com/dgjh22/Gestion-de-eventos.git
+
 
 ## Install the required dependencies:
 
