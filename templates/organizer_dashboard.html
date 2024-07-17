@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard del Organizador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/styles.css') }}">
+  </head>
+  <body>
+    <h1>Dashboard del Organizador</h1>
+    <div class="buttons">
+      <a href="{{ url_for('events') }}" class="btn">Ver Lista de Eventos</a>
+      <a href="{{ url_for('create_event') }}" class="btn">Crear Evento</a>
+      <a href="{{ url_for('add_organizer') }}" class="btn"
+        >Crear Usuario Organizador</a
+      >
+      <a href="{{ url_for('logout') }}" class="btn">Cerrar Sesión</a>
+    </div>
+  </body>
+</html>

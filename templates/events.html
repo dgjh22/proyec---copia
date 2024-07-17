@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/eventStyles.css') }}">
+</head>
+<body>
+    <h1>Eventos</h1>
+    <a href="{{ url_for('create_event') }}" class="btn">Crear Evento</a>
+    <a href="{{ url_for('logout') }}" class="btn">Cerrar Sesión</a>
+
+
+    <div class="event-list">
+        {% for event in events %}
+            <div class="event">
+                <h2>{{ event[1] }}</h2>
+                <p>{{ event[2] }}</p>
+                <form action="{{ url_for('register_for_event', event_id=event[0]) }}" method="POST">
+                    <button class="btn" type="submit">Registrarse</button>
+                </form>
+                <a href="{{ url_for('event_attendees', event_id=event[0]) }}" class="btn">Ver Asistentes</a>
+            </div>
+        {% endfor %}
+    </div>     
+</body>
+</html>
+
+

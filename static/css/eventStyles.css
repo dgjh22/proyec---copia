@@ -1,0 +1,52 @@
+.event-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Optional: adds a border around each event */
+  border-radius: 8px; /* Optional: rounds the corners of the event border */
+}
+
+.event h2,
+.event p {
+  text-align: center;
+}
+
+.btn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #0b8a89;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0b8a89;
+}
+
+/* Additional styling to handle space around buttons within each event */
+.event form,
+.event a.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Makes sure the buttons stretch to the container width */
+}
+
+/* If you want to have the buttons next to each other with space around */
+.event-actions {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Apply this class to the form and the anchor tag if you want them next to each other */

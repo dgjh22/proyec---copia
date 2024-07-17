@@ -1,0 +1,60 @@
+body {
+    background-color: #f0f0f0; /* Fondo claro */
+  }
+  
+  .container {
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Título gris oscuro */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Texto gris oscuro */
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 3px;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0b8a89; /* Botón verde */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="button"] { /* Botón Volver */
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    font-size: 18px; /* Tamaño de texto más grande */
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/loginEv.css') }}">
+
+</head>
+<body>
+    
+        <!-- Formulario de inicio de sesión -->
+        <div class="login-section">
+            <div class="form-box login">
+                <form method="POST" action="/login">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="password" placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn">Iniciar Sesión</button>
+                    <div class="create-account">
+                        <p>¿Aún no tienes cuenta? <a href="/register" class="register-link">Registrarse</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+</body>
+</html>
+
+
+

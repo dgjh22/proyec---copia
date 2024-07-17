@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Evento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/crearEv.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Evento</h1>
+        <form method="POST">
+            <input type="text" name="title" placeholder="Título del Evento" required>
+            <textarea name="description" placeholder="Descripción" required></textarea>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <input type="text" name="location" placeholder="Ubicación" required>
+            <input type="number" name="capacity" placeholder="Capacidad" required>
+            <button type="submit" class="btn">Crear Evento</button>
+        </form>
+        <a href="/events" class="btn">Volver</a>
+    </div>
+</body>
+</html>
+
+
+
+

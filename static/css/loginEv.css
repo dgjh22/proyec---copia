@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fondo claro */
+  }
+  
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .form-box {
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 300px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Título gris oscuro */
+  }
+  
+  .input-box {
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 3px;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #0b8a89; /* Borde verde claro */
+    box-shadow: 0 0 10px rgba(11, 138, 137, 0.3); /* Sombra verde claro */
+  }
+  
+  .btn {
+    background-color: #0b8a89; /* Botón verde claro */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animación de fondo */
+  }
+  
+  .btn:hover {
+    background-color: #09927a; /* Botón verde oscuro */
+  }
+  
+  .create-account {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-link {
+    color: #0b8a89; /* Enlace verde claro */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animación de enlace */
+    justify-content: center;
+  }
+  
+  .register-link:hover {
+    color: #09927a; /* Enlace verde oscuro */
+  }
